@@ -17,7 +17,7 @@ def generate_roadmap(user_data):
     Provide the roadmap with specific courses, skills, and activities for each module, and make sure the roadmap is personalized based on the student's current data. The response should be no longer than 3 sentences per module.
     """
     
-    # Generating the roadmap using Ollama API (Gemma 2B model)
+    # Generating roadmap using Ollama API (Gemma 2B model)
     print("Generating roadmap...")
     response = ollama.chat(model="gemma:2b", messages=[{"role": "user", "content": prompt}])
     
