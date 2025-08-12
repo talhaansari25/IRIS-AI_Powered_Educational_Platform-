@@ -14,7 +14,7 @@ def get_similar_sentence(paragraph, query):
     """
     Find the most similar sentence in the paragraph to the user's query.
     """
-    # Initialize the SentenceTransformer model
+    # Initialize SentenceTransformer model
     model = SentenceTransformer('all-MiniLM-L6-v2')
 
     # Split paragraph into sentences
