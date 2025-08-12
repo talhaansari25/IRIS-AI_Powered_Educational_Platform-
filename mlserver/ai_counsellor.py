@@ -9,7 +9,7 @@ def ai_counselor(query, student_info=None):
     :return: AI-generated response with a restriction of less than 4 sentences.
     """
     
-    # Preparing a personalized prompt for the AI with sentence length restriction
+    # Preparing personalized prompt for the AI with sentence length restriction
     if student_info:
         personalized_prompt = f"""
         You are an AI counselor at a university. You provide personalized advice to students based on their academic background and career goals.
