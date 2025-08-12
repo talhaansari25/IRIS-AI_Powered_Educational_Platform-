@@ -9,7 +9,7 @@ model_name = "t5-small"  # You can use "t5-base" or "t5-large" for better perfor
 tokenizer = T5Tokenizer.from_pretrained(model_name)
 model = T5ForConditionalGeneration.from_pretrained(model_name).to(device)
 
-# Function for summarizing the text
+# Function for summarizing text
 def summarize_text(text):
     # Preprocess the text: adding the "summarize" prefix to the input
     input_text = "summarize in 5 sentence: " + text
