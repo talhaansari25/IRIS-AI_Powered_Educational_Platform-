@@ -13,7 +13,7 @@ CORS(app)
 
 @app.route('/generatequest', methods=['POST'])
 def generate_questions_api():
-    # Get paragraph from the request body
+    # Get paragraph from request body
     data = request.get_json()
 
     # Check if 'paragraph' key exists in the request
